@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800italic,800,700italic' rel='stylesheet' type='text/css'>
-	<script src="jquery-2.1.4.js"></script>
-	<script src="app2.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css">
-	<title></title>
-</head>
-<body>
-	<div class="container">
-		<h1>To do</h1>
-		<section id="todoapp">
+	<head>
+		<meta charset="UTF-8">
+	<!-- 
+		Pourquoi charger autant de fonts ? Ca ralentit le temps de chargement -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:800italic,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Charger d'abord le CSS, puis le js (en footer de préférence, afin que le contenu se charge en premier) -->
+
+
+		
+		
+		<title>Et le titre ? :( C'est important pour le SEO</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>To do</h1>
+			<section id="todoapp">
 				<p>
-					<input id="new-todo" placeholder="Que devez vous faire ?" autocomplete="off">
+					<input type="text" id="new-todo" placeholder="Que devez vous faire ?" autocomplete="off">
 				</p>
 				<ul>
 
 				</ul>
-		</section>
-		<footer>
-			<button id="all">All</button>
-			<button id="active">Active</button>
-			<button id="completed">Completed</button>
-			<button id="clearcompleted">Clear completed</button>
-			<p id="counter"></p>
-		</footer>
-	</div>
-</body>
+			</section>
+			<footer>
+				<button id="all">All</button>
+				<button id="active">Active</button>
+				<button id="completed">Completed</button>
+				<button id="clearcompleted">Clear completed</button>
+				<p id="counter"></p>
+			</footer>
+		</div>
+		
+
+		<!-- Juste avant la fermeture du body -->
+		<script src="js/query-2.1.4.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
