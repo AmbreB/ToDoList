@@ -1,3 +1,8 @@
+	/*
+	Rajoute des commentaires en décrivant brièvement les sections concernées.
+	Regroupe les propriétés concernant les mêmes éléments.
+
+	*/
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -114,6 +119,11 @@ i:hover {
 	color:#9E9E9E;
 	cursor:pointer;
 }
+
+/*
+	Pourquoi est-ce commenté ? Inutile ? Besoin pour débugguer ?
+	Si inutile : A SUPPRIMER, sinon expliquer pourquoi on le garde en commentaire;
+*/
 /*
 ul li:not(:first-child) {
 	margin-top:-24px;
